@@ -47,7 +47,7 @@ public class SocieteTest extends Societe1 {
 
    
     @Test
-    void valueNullEmptySetterRaisonSociale () {
+    void RaisonSocialeVide () {
         String[] invalidValues = {"",null, "\r", "\n" };
         assertTrue( true );
         for (String invalidValue : invalidValues) {
@@ -60,7 +60,7 @@ public class SocieteTest extends Societe1 {
     @NullSource
     @EmptySource
     @ValueSource(strings = {"ttttt", "afpa.rt", "afpa@hhh","afpa@afpa.c", "" })
-    void invalidFormatMail (String invalidValues) {
+    void MailInvalide (String invalidValues) {
         ExceptionMetier1 assertThrows = assertThrows(ExceptionMetier1.class, () -> { new SocieteTest().setAdresseMail(invalidValues); }); 
         System.out.println(assertThrows);
     }
@@ -80,7 +80,7 @@ public class SocieteTest extends Societe1 {
     
     @ParameterizedTest
     @ValueSource(strings = {"000000000", "+65458752","01.01.01.01.01" })      
-    void telInvalid(String tel) {
+    void telInvalide(String tel) {
         ExceptionMetier1 assertThrows = assertThrows(ExceptionMetier1.class, () -> { new SocieteTest().setTelePhone(tel); }); 
         System.out.println(assertThrows);
     }
