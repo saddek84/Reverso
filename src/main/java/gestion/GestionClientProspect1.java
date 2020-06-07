@@ -35,7 +35,7 @@ private static final Logger logger = Logger.getLogger("GestionClientProspect1.cl
     daoc.select();
     daop.select();
     
-    logger.log(Level.SEVERE, "erreur");
+    
      
     Collections.sort(ListClient1.getListClients(), Comparer1.compareNom);
     Collections.sort(ListProspect1.getListProspect(),Comparer1.compareNom);

@@ -96,6 +96,8 @@ public class AffichageClientsProspects1 extends javax.swing.JFrame {
 
     public AffichageClientsProspects1(String choix,Societe1 p_sc) {
         initComponents();
+        jmontantGlobal.setVisible(false);
+        jMontant.setVisible(false);
         this.flagContrat=false;
         this.choix=choix;
         this.sc=p_sc;
