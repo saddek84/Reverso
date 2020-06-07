@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: AFPA.CDA03.Demo.SocieteTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.172 s <<< FAILURE! - in AFPA.CDA03.Demo.SocieteTest
+telInvalid{String}[3]  Time elapsed: 0.016 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected exception.ExceptionMetier1 to be thrown, but nothing was thrown.
+	at AFPA.CDA03.Demo.SocieteTest.telInvalid(SocieteTest.java:84)
+
+invalidFormatMail{String}[1]  Time elapsed: 0 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown ==> expected: <exception.ExceptionMetier1> but was: <java.lang.NullPointerException>
+	at AFPA.CDA03.Demo.SocieteTest.invalidFormatMail(SocieteTest.java:64)
+Caused by: java.lang.NullPointerException
+	at AFPA.CDA03.Demo.SocieteTest.lambda$invalidFormatMail$1(SocieteTest.java:64)
+	at AFPA.CDA03.Demo.SocieteTest.invalidFormatMail(SocieteTest.java:64)
+
